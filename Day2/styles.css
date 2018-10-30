@@ -1,0 +1,47 @@
+.cat_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 50px;
+  
+  height: 500px;
+}
+
+.btn-cat {
+  height: 100px;
+  width: 100px;
+  background-image: url('./grumpy-cat.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-cat--small {
+  height: 80px;
+  width: 80px;
+  background-image: url('./grumpy-cat.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-cat:focus,
+.btn-cat--small:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.cat-display {
+
+}
