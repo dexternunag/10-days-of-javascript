@@ -1,0 +1,36 @@
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin-top: 30px;
+}
+
+.box {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 100px;
+  width: 100px;
+  background-color: #eee;
+  border: 2px solid #e2e2e2;
+}
+
+.item {
+  position: relative;
+  top: 4px;
+  left: 4px;
+  height: 88px;
+  width: 89px;
+  background-image: url('http://source.unsplash.com/random/80x80');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 2px #dddddd;
+}
+
+.hovered {
+  background-color: #dddddd;
+  border: 2px dashed #a1a1a1;
+}
