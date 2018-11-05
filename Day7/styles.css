@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.checkboxes {
+  background-color: #f4f4f4;
+  height: auto;
+  width: 300px;
+
+  box-shadow: 6px 6px 5px -5px rgba(0,0,0,0.75);
+}
+
+.checkboxes li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.checkboxes li label {
+  min-width: 215px;
+}
+
+.checkboxes li input {
+  vertical-align: middle;
+  margin-right: 15px;
+}
