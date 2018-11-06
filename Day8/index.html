@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 8 | 30 Days of JavaScript</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">#30DaysOfJavaScript</a>
+    </div>
+  </nav>
+
+  <script>
+    const developers = [
+      { name: 'John Doe', age: 23, framework: 'React' },
+      { name: 'Bobby Park', age: 27, framework: 'Angular' },
+      { name: 'John Smith', age: 25, framework: 'Vue' }
+    ];
+    
+    // Some and Every Checks
+    // Array.Prototype.some() // is at least one person 23?
+    const isYoung = developers.some(developer => developer.age <= 23); // true
+
+    // Array.Prototype.every() // is everyone 23?
+    const allYoung = developers.every(developer => developer.age <= 23); // false
+
+    // Array.Prototype.find()
+    // Returns just the one you're looking for
+    // find a developer who's framework is React
+    const reactDev = developers.find(developer => developer.framework === 'React'); // {name: "John Doe", age: 23, framework: "React"}
+    
+    // Array.Prototype.findIndex()
+    // Find the index of a developer who's framework is Vue
+    const devIndex = developers.findIndex(developer => developer.framework === 'Vue'); // 2
+  </script>
+
+</body>
+</html>
