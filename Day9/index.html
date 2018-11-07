@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 9 | 30 Days of JavaScript</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">#30DaysOfJavaScript</a>
+    </div>
+  </nav>
+
+  <script>
+    const developers = [
+      { name: 'John Doe', age: 23, framework: 'React' },
+      { name: 'Bobby Park', age: 27, framework: 'Angular' },
+      { name: 'John Smith', age: 25, framework: 'Vue' }
+    ];
+    
+    // Array.prototype.filter()
+    // Filter the list of developers for those age is 23 and below
+    const isYoung = developers.filter(developer => developer.age <= 23); 
+    // [{ name: 'John Doe', age: 23, framework: 'React' }]
+
+    // Array.prototype.map()
+    // Give us an array of the developer name and age
+    const developersInfo = developers.map(({name, age}) => `${name} is ${age} years old.`);
+    // ['John Doe is 23 years old', 'Bobby Park is 27 years old', 'John Smith is 25 years old']
+
+    // Array.prototype.sort()
+    // Sort the developers by age, oldest to youngest
+    const ordered = developers.sort((a, b) => a.age < b.age ? 1 : -1);
+
+    // Array.prototype.reduce()
+    // Sum of the age of all developers
+    const totalAge = developers.reduce((total, developer) => total + developer.age, 0);
+  </script>
+
+</body>
+</html>
